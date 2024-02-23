@@ -1,0 +1,8 @@
+function func (min,max,length) {
+    let i; let arr = []; let res = [];
+    for (i = min; i <= max; i++) arr.push(i);
+    for (i = 0; i <= length; i++) res.push(arr.splice(Math.floor(Math.random()*arr.length),1 )[0]);
+
+return res;
+
+}
